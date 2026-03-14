@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Link</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#link").attr("href","https://en.wikipedia.org/wiki/JavaScript");
+                $("#link").text("Go to Javascript:");
+            });
+        });
+    </script>
+</head>
+<body>
+    <a id="link" href="https://wikipedia.com">Click Here For Wikipedia</a>
+    <br><br>
+
+    <button>Change Link</button>
+</body>
+</html>
