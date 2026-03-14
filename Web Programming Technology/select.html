@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Select Paragraph</title>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<style>
+p{
+display:none;
+}
+</style>
+
+<script>
+$(document).ready(function(){
+
+$("#paraSelect").change(function(){
+
+var index = $(this).val();
+
+$("p").hide();
+$("p").eq(index).show();
+
+});
+
+});
+</script>
+
+</head>
+
+<body>
+
+<p>This is Paragraph 1</p>
+<p>This is Paragraph 2</p>
+<p>This is Paragraph 3</p>
+
+<select id="paraSelect">
+<option selected disabled>Select Paragraph</option>
+<option value="0">Paragraph 1</option>
+<option value="1">Paragraph 2</option>
+<option value="2">Paragraph 3</option>
+</select>
+
+</body>
+</html>
